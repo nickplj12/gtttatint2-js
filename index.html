@@ -1,22 +1,12 @@
 <!DOCTYPE HTML>
 <html>
     <head>
-        <meta charset='utf8'>
-        <script src='https://e9x.github.io/ruffle/ruffle.js'></script>
+        <script type="text/javascript" src="swf2js.js"></script>
     </head>
     <body>
-        <!--<embed src="https://htwins.net/gtttatint/gtttatint2.swf"></embed>-->
-        <script>
-            window.RufflePlayer = window.RufflePlayer || {};
-            window.addEventListener("load", (event) => {
-            const ruffle = window.RufflePlayer.newest();
-            const player = ruffle.createPlayer();
-            const container = document.getElementById("container");
-            container.appendChild(player);
-            player.load("gtttatint2.swf");
-            });
-        </script>
-        <script src='https://e9x.github.io/ruffle/ruffle.js'></script>
+        <script type="text/javascript">
+          swf2js.load('gtttatint2.swf');
+        </script>  
     </body>
 </html>
 
